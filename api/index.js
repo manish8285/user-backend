@@ -3,7 +3,7 @@ require("./db/conn")
 const User = require("./models/users")
 const cors = require('cors')
 const app= express();
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 4000;
 
 //return response as json
 app.use(express.json()) 
