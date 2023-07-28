@@ -3,7 +3,7 @@ require("./db/conn")
 const User = require("./models/users")
 const cors = require('cors')
 const app= express();
-const port = process.env.PORT || 4000;
+const PORT = process.env.PORT || 4000;
 
 //return response as json
 app.use(express.json()) 
@@ -64,6 +64,6 @@ app.delete("/users/:id", async(req,res)=>{
 })
 
 
-app.listen(9000,()=>{
+app.listen(PORT,()=>{
     console.log(`connection is setup at${port}`);
 })
