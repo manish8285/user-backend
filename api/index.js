@@ -10,6 +10,13 @@ app.use(express.json())
 //allow cors policy
 app.use(cors())
 
+app.get("/",(req,res)=>{
+    res.json({
+        name:"manish",
+        age:23
+    })
+})
+
 //get all users
 app.get("/users",(req,res)=>{
     User.find({}).then((data)=>{
@@ -57,6 +64,6 @@ app.delete("/users/:id", async(req,res)=>{
 })
 
 
-app.listen(port,()=>{
+app.listen(9000,()=>{
     console.log(`connection is setup at${port}`);
 })
