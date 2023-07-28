@@ -65,5 +65,5 @@ app.delete("/users/:id", async(req,res)=>{
 
 
 app.listen(PORT,()=>{
-    console.log(`connection is setup at${port}`);
+    console.log(`connection is setup at${PORT}`);
 })
